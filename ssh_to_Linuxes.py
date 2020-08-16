@@ -53,7 +53,6 @@ class SSH:
                 print(ret)
                 err = stderr.read()
                 print("\nERROR\n------------------\n"+str(err))
-
             elif "rmuser" in self.command:
                 print(f"removing administrator from {self.host}")
                 stdin.write(f"{self.password}\n")
@@ -64,8 +63,6 @@ class SSH:
                 print(ret)
                 err = stderr.read()
                 print("\nERROR\n------------------\n"+str(err))
-
-
             else:
                 stdin.write(f"{self.password}\n")
                 stdin.flush()
