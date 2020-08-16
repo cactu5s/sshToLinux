@@ -3,10 +3,10 @@
 import paramiko
 
 username = "administrator"
-password = ""
-Nessus_UserPass = ""
-AddNewUser = "useradd -m -d /home/test -g wheel -p $(openssl passwd -1 'admin123') -s /bin/bash test"
-ChangPassword = "usermod -l cyber -m -d /home/cyber -p $(openssl passwd -1 'admin@123') administrator"
+password = "*********"
+Nessus_UserPass = "*********"
+AddNewUser = "useradd -m -d /home/test -g wheel -p $(openssl passwd -1 '*********') -s /bin/bash test"
+ChangPassword = "usermod -l cyber -m -d /home/cyber -p $(openssl passwd -1 '*********') administrator"
 AddNessusUser1 = '/opt/nessus/sbin/nessuscli adduser cyber'
 AddNessusUser2 = '/opt/nessus/sbin/nessuscli adduser admin'
 RemoveNessusUser = '/opt/nessus/sbin/nessuscli rmuser administrator'
