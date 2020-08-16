@@ -82,7 +82,7 @@ class SSH:
 
 for i in range(11, 41):
     for command in commands:
-        command1 = SSH(f"10.77.8.{i}", username, password, Nessus_UserPass, command)
+        command1 = SSH(f"192.168.1.{i}", username, password, Nessus_UserPass, command)
         command1.ssh_connect()
         command1.command_exec()
         command1.close_connection()
