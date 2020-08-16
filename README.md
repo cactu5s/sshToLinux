@@ -1,2 +1,2 @@
 # sshToLinux
-A simple script to root and create usernames in Linux
+A simple script to become root with sudo command and create a new usernames in Linux
